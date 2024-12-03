@@ -20,6 +20,11 @@
         box-shadow: 0px 0px 18px 0px rgba(13,26,36,0.5);
         min-height: calc(100vh - 2em);
       }
+      #cta-logo {
+        float: right;
+        height: 44px;
+        margin-left: 1em;
+      }
       h1 {
         color: #005a9c;
         margin: 0 0 .1em;
@@ -43,16 +48,31 @@
         margin: 0;
         text-align: center;
       }
+      thead tr:first-child th:first-child {
+        border-width: 0 1px 1px 0;
+      }
       tbody th {
         text-align: left;
       }
       th:nth-child(even), td:nth-child(even) {
+        /* column zebra stripes */
         background-color: #f2f6fa;
+      }
+      tbody tr:nth-child(odd) {
+        /* row zebra stripes */
+        background-color: #f7f7f7;
+      }
+      tbody tr:nth-child(odd) th:nth-child(even), tbody tr:nth-child(odd) td:nth-child(even) {
+        /* zebra stripe column/row intersection */
+        background-color: #eaeef2;
       }
       th.section {
         background-color: #d0e1ed;
       }
       abbr {
+        text-decoration: none;
+      }
+      tbody abbr {
         text-decoration: none;
         padding: 0 0.2em;
         cursor: help;
@@ -62,6 +82,7 @@
   <body>
     <div class="container">
       <section>
+        <img src="https://www.cta.tech/Content/Assets/img/ctalogo.svg" alt="CTA: Consumer Technology Association" id="cta-logo" />
         <h1>Web Media API Snapshot - Support by Year</h1>
         <p>This <em>non-normative</em> document attempts to visually capture which
           APIs are specified in <b>Section 3. Web Media APIs currently supported 
@@ -87,14 +108,14 @@
           <thead>
             <tr class="wmas-versions">
               <th></th>
-              <th><a href="https://www.w3.org/2017/12/webmediaapi.html">WMAS<br>2017</a></th>
-              <th><a href="https://www.w3.org/2018/12/webmediaapi.html">WMAS<br>2018</a></th>
-              <th><a href="https://www.w3.org/2019/12/webmediaapi.html">WMAS<br>2019</a></th>
-              <th><a href="https://www.w3.org/2020/12/webmediaapi.html">WMAS<br>2020</a></th>
-              <th><a href="https://www.w3.org/2021/12/webmediaapi.html">WMAS<br>2021</a></th>
-              <th><a href="https://www.w3.org/2022/12/webmediaapi.html">WMAS<br>2022</a></th>
-              <th><a href="https://www.w3.org/2023/11/webmediaapi.html">WMAS<br>2023</a></th>
-              <th><a href="https://www.w3.org/community/reports/webmediaapi/CG-FINAL-webmediaapi-20241016/">WMAS<br>2024</a></th>
+              <th><a href="https://www.w3.org/2017/12/webmediaapi.html"><abbr title="Web Media API Snapshot 2017">WMAS<br>2017</abbr></a></th>
+              <th><a href="https://www.w3.org/2018/12/webmediaapi.html"><abbr title="Web Media API Snapshot 2018">WMAS<br>2018</abbr></a></th>
+              <th><a href="https://www.w3.org/2019/12/webmediaapi.html"><abbr title="Web Media API Snapshot 2019">WMAS<br>2019</abbr></a></th>
+              <th><a href="https://www.w3.org/2020/12/webmediaapi.html"><abbr title="Web Media API Snapshot 2020">WMAS<br>2020</abbr></a></th>
+              <th><a href="https://www.w3.org/2021/12/webmediaapi.html"><abbr title="Web Media API Snapshot 2021">WMAS<br>2021</abbr></a></th>
+              <th><a href="https://www.w3.org/2022/12/webmediaapi.html"><abbr title="Web Media API Snapshot 2022">WMAS<br>2022</abbr></a></th>
+              <th><a href="https://www.w3.org/2023/11/webmediaapi.html"><abbr title="Web Media API Snapshot 2023">WMAS<br>2023</abbr></a></th>
+              <th><a href="https://www.w3.org/community/reports/webmediaapi/CG-FINAL-webmediaapi-20241016/"><abbr title="Web Media API Snapshot 2024">WMAS<br>2024</abbr></a></th>
             </tr>
           </thead>
           <tbody>
@@ -134,6 +155,8 @@
               <td>16 January 2023 <abbr title="Exception(s) exist">!</abbr><abbr title="Note(s) exist">+</abbr></td>
               <td>15 January 2024 <abbr title="Exception(s) exist">!</abbr><abbr title="Note(s) exist">+</abbr></td>
             </tr>
+          </tbody>
+          <tbody>
             <tr>
               <th colspan="9" class="section">CSS specifications</th>
             </tr>
@@ -141,11 +164,11 @@
               <th>CSS Snapshot</th>
               <td>2017</td>
               <td>2017</td>
-              <td>2018 +</td>
-              <td>2018 +</td>
-              <td>2018 +</td>
-              <td>2018 +</td>
-              <td>2018 +</td>
+              <td>2018 <abbr title="Note(s) exist">+</abbr></td>
+              <td>2018 <abbr title="Note(s) exist">+</abbr></td>
+              <td>2018 <abbr title="Note(s) exist">+</abbr></td>
+              <td>2018 <abbr title="Note(s) exist">+</abbr></td>
+              <td>2018 <abbr title="Note(s) exist">+</abbr></td>
               <td>2023</td>
             </tr>
             <tr>
@@ -158,6 +181,204 @@
               <td>2.1</td>
               <td>2.1</td>
               <td>2.1</td>
+            </tr>
+            <tr>
+              <th>Compositing and Blending</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Animations</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Backgrounds and Borders Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Basic User Interface Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Box Model Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Cascading and Inheritance</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th>CSS Color Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>4</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th>CSS Conditional Rules Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Containment Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Counter Styles</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Custom Properties For Cascading Variables Module</th>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Easing Functionse</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Flexible Box Layout Module</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Font Loading Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Fonts Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Grid Layout Module</th>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Images Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Logical Properties and Values</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
             </tr>
             <tr>
               <th>CSS Style Attributes</th>
