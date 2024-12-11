@@ -27,7 +27,7 @@
       }
       h1 {
         color: #005a9c;
-        margin: 0 0 .1em;
+        margin: 0 0 0.75em;
         font-size: 220%;
       }
       h2 {
@@ -41,6 +41,7 @@
       }
       table {
         border-collapse: collapse;
+        position: relative;
       }
       th, td {
         border: 1px solid #ccc;
@@ -50,9 +51,17 @@
       }
       thead tr:first-child th:first-child {
         border-width: 0 1px 1px 0;
+        box-shadow: inset -3px -3px 5px 0px #ddd;
       }
       tbody th {
         text-align: left;
+      }
+      thead th {
+        position: sticky;
+        top: 0; /* Don't forget this, required for the stickiness */
+        background-color: #fff;
+        border-width: 0;
+        box-shadow: inset 0px 0px 0px 1px #ccc;
       }
       th:nth-child(even), td:nth-child(even) {
         /* column zebra stripes */
@@ -304,7 +313,7 @@
               <td>1</td>
             </tr>
             <tr>
-              <th>CSS Easing Functionse</th>
+              <th>CSS Easing Functions</th>
               <td></td>
               <td></td>
               <td></td>
@@ -381,12 +390,199 @@
               <td>1</td>
             </tr>
             <tr>
+              <th>CSS Multi-column Layout Module</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Namespaces Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Scroll Snap Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Shapes Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
               <th>CSS Style Attributes</th>
               <td>&check;</td>
               <td>&check;</td>
               <td>&check;</td>
               <td>&check;</td>
               <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>CSS Syntax Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Text Decoration Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>3 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>3 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Transforms Module</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1 <abbr title="Exception(s) exist">!</abbr></td>
+            </tr>
+            <tr>
+              <th>CSS Transitions</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Values and Units Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Will Change Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Writing Modes</th>
+              <td></td>
+              <td>3 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>3 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>3 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSSOM View Module</th>
+              <td></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Filter Effects Module</th>
+              <td></td>
+              <td></td>
+              <td>1 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>Media Queries</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>4 <abbr title="Note(s) exist">+</abbr></td>
+            </tr>
+            <tr>
+              <th>Resize Observer</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Selectors</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>Web Animations</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
               <td>&check;</td>
               <td>&check;</td>
               <td>&check;</td>
