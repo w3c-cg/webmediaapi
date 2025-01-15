@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Media API Snapshot - Support by Year</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: sans-serif;
+        background-color: #f7f8f9;
+        padding-bottom: 3em;
+      }
+      .container {
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 1em;
+        background-color: #fff;
+        box-shadow: 0px 0px 18px 0px rgba(13,26,36,0.5);
+        min-height: calc(100vh - 2em);
+      }
+      #cta-logo {
+        float: right;
+        height: 44px;
+        margin-left: 1em;
+      }
+      h1 {
+        color: #005a9c;
+        margin: 0 0 0.75em;
+        font-size: 220%;
+      }
+      h2 {
+        color: #005a9c;
+        margin: 1.2em 0 0.5em;
+        font-size: 140%;
+        font-weight: normal;
+      }
+      a {
+        color: #034575;
+      }
+      table {
+        border-collapse: collapse;
+        position: relative;
+      }
+      th, td {
+        border: 1px solid #ccc;
+        padding: 0.5em;
+        margin: 0;
+        text-align: center;
+      }
+      thead tr:first-child th:first-child {
+        border-width: 0 1px 1px 0;
+        box-shadow: inset -3px -3px 5px 0px #ddd;
+      }
+      tbody th {
+        text-align: left;
+      }
+      thead th {
+        position: sticky;
+        top: 0; /* Don't forget this, required for the stickiness */
+        background-color: #fff;
+        border-width: 0;
+        box-shadow: inset 0px 0px 0px 1px #ccc;
+      }
+      th:nth-child(even), td:nth-child(even) {
+        /* column zebra stripes */
+        background-color: #f2f6fa;
+      }
+      tbody tr:nth-child(odd) {
+        /* row zebra stripes */
+        background-color: #f7f7f7;
+      }
+      tbody tr:nth-child(odd) th:nth-child(even), tbody tr:nth-child(odd) td:nth-child(even) {
+        /* zebra stripe column/row intersection */
+        background-color: #eaeef2;
+      }
+      th.section {
+        background-color: #d0e1ed;
+      }
+      abbr {
+        text-decoration: none;
+      }
+      tbody abbr {
+        text-decoration: none;
+        padding: 0 0.2em;
+        cursor: help;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <img src="https://www.cta.tech/Content/Assets/img/ctalogo.svg" alt="CTA: Consumer Technology Association" id="cta-logo" />
+        <h1>Web Media API Snapshot - Support by Year</h1>
+        <p>This <em>non-normative</em> document attempts to visually capture which
+          APIs are specified in <b>Section 3. Web Media APIs currently supported 
+          on all platforms</b> for each year the
+          <a href="https://github.com/w3c/webmediaapi">Web Media API Snapshot</a>
+          has been published. This should only be used as a guide and not a formal 
+          reference. The annual snapshots themselves are the only formal, normative 
+          reference.</p>
+      </section>
+      <section>
+        <h2>Table Legend</h2>
+        <ul>
+          <li>! = exception(s) exist</li>
+          <li>+ = note(s) exist</li>
+          <li>&check; = API is included</li>
+          <li>Number/Year = the version/level of that specification</li>
+          <li>Date = Review Draft date of a Living Standard (either that version or a later one should be used)</li>
+          <li><i>(via HTML)</i> = implicitly included due to the contents of the specification being folded into the HTML specification</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Web Media API Snapshot Support Table</h2>
+        <table>
+          <thead>
+            <tr class="wmas-versions">
+              <th></th>
+              <th><a href="https://www.w3.org/2017/12/webmediaapi.html"><abbr title="Web Media API Snapshot 2017">WMAS<br>2017</abbr></a></th>
+              <th><a href="https://www.w3.org/2018/12/webmediaapi.html"><abbr title="Web Media API Snapshot 2018">WMAS<br>2018</abbr></a></th>
+              <th><a href="https://www.w3.org/2019/12/webmediaapi.html"><abbr title="Web Media API Snapshot 2019">WMAS<br>2019</abbr></a></th>
+              <th><a href="https://www.w3.org/2020/12/webmediaapi.html"><abbr title="Web Media API Snapshot 2020">WMAS<br>2020</abbr></a></th>
+              <th><a href="https://www.w3.org/2021/12/webmediaapi.html"><abbr title="Web Media API Snapshot 2021">WMAS<br>2021</abbr></a></th>
+              <th><a href="https://www.w3.org/2022/12/webmediaapi.html"><abbr title="Web Media API Snapshot 2022">WMAS<br>2022</abbr></a></th>
+              <th><a href="https://www.w3.org/2023/11/webmediaapi.html"><abbr title="Web Media API Snapshot 2023">WMAS<br>2023</abbr></a></th>
+              <th><a href="https://www.w3.org/community/reports/webmediaapi/CG-FINAL-webmediaapi-20241016/"><abbr title="Web Media API Snapshot 2024">WMAS<br>2024</abbr></a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th colspan="9" class="section">Core web specifications</th>
+            </tr>
+            <tr>
+              <th>DOM</th>
+              <td></td>
+              <td>Living Standard</td>
+              <td>2 January 2019</td>
+              <td>18 June 2019</td>
+              <td>15 June 2020</td>
+              <td>21 June 2021</td>
+              <td>20 June 2022</td>
+              <td>19 June 2023</td>
+            </tr>
+            <tr>
+              <th>ECMAScript</th>
+              <td>5.1</td>
+              <td>6</td>
+              <td>7</td>
+              <td>2020 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>2021 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>2022 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>2023 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>2024 <abbr title="Exception(s) exist">!</abbr></td>
+            </tr>
+            <tr>
+              <th>HTML</th>
+              <td>5.1 2nd Edition</td>
+              <td>Living Standard</td>
+              <td>2 January 2019</td>
+              <td>18 June 2019</td>
+              <td>15 June 2020</td>
+              <td>17 January 2022 <abbr title="Exception(s) exist">!</abbr><abbr title="Note(s) exist">+</abbr></td>
+              <td>16 January 2023 <abbr title="Exception(s) exist">!</abbr><abbr title="Note(s) exist">+</abbr></td>
+              <td>15 January 2024 <abbr title="Exception(s) exist">!</abbr><abbr title="Note(s) exist">+</abbr></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th colspan="9" class="section">CSS specifications</th>
+            </tr>
+            <tr>
+              <th>CSS Snapshot</th>
+              <td>2017</td>
+              <td>2017</td>
+              <td>2018 <abbr title="Note(s) exist">+</abbr></td>
+              <td>2018 <abbr title="Note(s) exist">+</abbr></td>
+              <td>2018 <abbr title="Note(s) exist">+</abbr></td>
+              <td>2018 <abbr title="Note(s) exist">+</abbr></td>
+              <td>2018 <abbr title="Note(s) exist">+</abbr></td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <th>Cascading Style Sheets</th>
+              <td>2.1</td>
+              <td>2.1</td>
+              <td>2.1</td>
+              <td>2.1</td>
+              <td>2.1</td>
+              <td>2.1</td>
+              <td>2.1</td>
+              <td>2.1</td>
+            </tr>
+            <tr>
+              <th>Compositing and Blending</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Animations</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Backgrounds and Borders Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Basic User Interface Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Box Model Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Cascading and Inheritance</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>4</td>
+              <td>4</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th>CSS Color Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>4</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th>CSS Conditional Rules Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Containment Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Counter Styles</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Custom Properties For Cascading Variables Module</th>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Easing Functions</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Flexible Box Layout Module</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Font Loading Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Fonts Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Grid Layout Module</th>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Images Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Logical Properties and Values</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Multi-column Layout Module</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Namespaces Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Scroll Snap Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Shapes Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Style Attributes</th>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>CSS Syntax Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Text Decoration Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>3 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>3 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Transforms Module</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1 <abbr title="Exception(s) exist">!</abbr></td>
+            </tr>
+            <tr>
+              <th>CSS Transitions</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Values and Units Module</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSS Will Change Module</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>CSS Writing Modes</th>
+              <td></td>
+              <td>3 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>3 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>3 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>CSSOM View Module</th>
+              <td></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Filter Effects Module</th>
+              <td></td>
+              <td></td>
+              <td>1 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>Media Queries</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>4 <abbr title="Note(s) exist">+</abbr></td>
+            </tr>
+            <tr>
+              <th>Resize Observer</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Selectors</th>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th>Web Animations</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th colspan="9" class="section">Media specifications</th>
+            </tr>
+            <tr>
+              <th>Encrypted Media Extensions</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>Media Capabilities</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Media Fragments URI</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1.0 <abbr title="Note(s) exist">+</abbr></td>
+              <td>1.0 <abbr title="Note(s) exist">+</abbr></td>
+            </tr>
+            <tr>
+              <th>Media Source Extensions</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>Scalable Vector Graphics (SVG)</th>
+              <td></td>
+              <td>1.1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Web Audio API</th>
+              <td>1.0 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1.0 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1.0 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1.0 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>1.0</td>
+              <td>1.0</td>
+              <td>1.0</td>
+              <td>1.0</td>
+            </tr>
+            <tr>
+              <th>WebRTC</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>&check; <abbr title="Note(s) exist">+</abbr></td>
+              <td>&check; <abbr title="Note(s) exist">+</abbr></td>
+              <td>&check; <abbr title="Note(s) exist">+</abbr></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th colspan="9" class="section">Graphics specifications</th>
+            </tr>
+            <tr>
+              <th>Fullscreen API Standard</th>
+              <td>Living Standard</td>
+              <td>Living Standard</td>
+              <td>23 January 2019</td>
+              <td>29 January 2020</td>
+              <td>18 January 2021</td>
+              <td>17 January 2022</td>
+              <td>16 January 2023</td>
+              <td>17 July 2023</td>
+            </tr>
+            <tr>
+              <th>Graphics Interchange Format</th>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>HTML Canvas 2D Context</th>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>JPEG File Interchange Format</th>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Portable Network Graphics (PNG) Specification</th>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th>WebGL Specification</th>
+              <td></td>
+              <td>1.03</td>
+              <td>1.03</td>
+              <td>1.03</td>
+              <td>1.03</td>
+              <td>1.03</td>
+              <td>1.03</td>
+              <td>1.03</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th colspan="9" class="section">Font specifications</th>
+            </tr>
+            <tr>
+              <th>Open Font Format</th>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>WOFF File Format</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th colspan="9" class="section">Networking specifications</th>
+            </tr>
+            <tr>
+              <th>Fetch</th>
+              <td>Living Standard</td>
+              <td>Living Standard</td>
+              <td>15 January 2019</td>
+              <td>13 December 2019</td>
+              <td>24 December 2020</td>
+              <td>19 December 2021</td>
+              <td>19 December 2022</td>
+              <td>18 December 2023 <abbr title="Exception(s) exist">!</abbr></td>
+            </tr>
+            <tr>
+              <th>WebSockets</th>
+              <td>&check;</td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td>19 September 2022</td>
+              <td>18 September 2023</td>
+            </tr>
+            <tr>
+              <th>XMLHttpRequest</th>
+              <td>Living Standard</td>
+              <td>Living Standard</td>
+              <td>8 January 2019</td>
+              <td>17 February 2020</td>
+              <td>15 February 2021</td>
+              <td>21 February 2022</td>
+              <td>20 February 2023</td>
+              <td>19 February 2024</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th colspan="9" class="section">Security specifications</th>
+            </tr>
+            <tr>
+              <th>Content Security Policy</th>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th>Referrer Policy</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Subresource Integrity</th>
+              <td></td>
+              <td></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Transport Layer Security (TLS) Protocol</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1.2 &amp; 1.3</td>
+              <td>1.2 &amp; 1.3</td>
+              <td>1.2 &amp; 1.3</td>
+              <td>1.2 &amp; 1.3</td>
+              <td>1.2 &amp; 1.3</td>
+            </tr>
+            <tr>
+              <th>Upgrade Insecure Requests</th>
+              <td></td>
+              <td></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Web Cryptography API</th>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th colspan="9" class="section">Web Performance specifications</th>
+            </tr>
+            <tr>
+              <th>Beacon</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>High Resolution Time</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Navigation Timing</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Page Visibility</th>
+              <td></td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+            </tr>
+            <tr>
+              <th>Performance Timeline</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Resource Timing</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>User Timing</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th colspan="9" class="section">Other web specifications</th>
+            </tr>
+            <tr>
+              <th>Channel messaging</th>
+              <td>&check;</td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+            </tr>
+            <tr>
+              <th>Cross-document messaging</th>
+              <td>&check;</td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+            </tr>
+            <tr>
+              <th>File API</th>
+              <td></td>
+              <td>&check; <abbr title="Exception(s) exist">!</abbr></td>
+              <td>&check; <abbr title="Exception(s) exist">!</abbr></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Indexed Database API</th>
+              <td>1.0 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>2.0 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>2.0 <abbr title="Exception(s) exist">!</abbr></td>
+              <td>2.0</td>
+              <td>2.0</td>
+              <td>2.0</td>
+              <td>2.0</td>
+              <td>2.0</td>
+            </tr>
+            <tr>
+              <th>Notifications API</th>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check; <abbr title="Exception(s) exist">!</abbr></td>
+              <td>&check; <abbr title="Exception(s) exist">!</abbr></td>
+              <td>&check; <abbr title="Exception(s) exist">!</abbr></td>
+              <td>&check; <abbr title="Exception(s) exist">!</abbr></td>
+              <td>&check; <abbr title="Exception(s) exist">!</abbr></td>
+            </tr>
+            <tr>
+              <th>Service Workers</th>
+              <td></td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>UI Events</th>
+              <td></td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+              <td>&check;</td>
+            </tr>
+            <tr>
+              <th>Web Storage</th>
+              <td>2</td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+            </tr>
+            <tr>
+              <th>Web Workers</th>
+              <td>&check; <abbr title="Exception(s) exist">!</abbr></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+              <td><i>(via HTML)</i></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>
