@@ -236,12 +236,13 @@
         <p>Devices MUST be conforming implementations of the following specifications:</p>
         <ul>
           <li>DOM [[!DOM]]</li>
-          <li>ECMAScript 2024 Language Specification [[!ECMASCRIPT-2024]]
+          <li>ECMAScript 2025 Language Specification [[!ECMASCRIPT-2025]]
             <ul>
               <li>Exceptions:
                 <ul>
-                  <li><a href="https://262.ecma-international.org/15.0/#sec-arraybuffer.prototype.resize">Resizable ArrayBuffers</a> and <a href="https://262.ecma-international.org/15.0/#sec-sharedarraybuffer.prototype.grow">growable SharedArrayBuffers</a> are not yet widely supported.</li>
-                  <li>The <a href="https://262.ecma-international.org/15.0/#sec-atomics.waitasync"><code>Atomics.waitAsync</code></a> method is not yet widely supported.</li>
+                  <li>The <a href="https://262.ecma-international.org/16.0/#sec-atomics.waitasync"><code>Atomics.waitAsync</code></a> method is not yet widely supported.</li>
+                  <li><a href="https://262.ecma-international.org/16.0/#prod-RegularExpressionModifier">Regular Expression Inline Pattern Modifiers</a> are not yet widely supported.</li>
+                  <li>16-bit floating point number support required for <a href="https://262.ecma-international.org/16.0/#sec-float16array"><code>Float16Array</code></a> is not universal, both in the JavaScript API and the underlying CPU architecture. Using it may result in slower performance on some platforms.</li>
                </ul>
             </ul>
           </li>
