@@ -57,8 +57,8 @@
             authors: [
               "Anne van Kesteren"
             ],
-            href: "https://dom.spec.whatwg.org/review-drafts/2023-06/",
-            date: "19 June 2023",
+            href: "https://dom.spec.whatwg.org/review-drafts/2024-06/",
+            date: "17 June 2024",
             status: "Review Draft (use this version or later)",
             publisher: "WHATWG"
           },
@@ -67,8 +67,8 @@
             authors: [
               "Anne van Kesteren"
             ],
-            href: "https://fetch.spec.whatwg.org/review-drafts/2023-12/",
-            date: "18 December 2023",
+            href: "https://fetch.spec.whatwg.org/review-drafts/2024-12/",
+            date: "16 December 2024",
             status: "Review Draft (use this version or later)",
             publisher: "WHATWG"
           },
@@ -77,8 +77,8 @@
             authors: [
               "Philip Jägenstedt"
             ],
-            href: "https://fullscreen.spec.whatwg.org/review-drafts/2023-07/",
-            date: "17 July 2023",
+            href: "https://fullscreen.spec.whatwg.org/review-drafts/2024-07/",
+            date: "15 July 2024",
             status: "Review Draft (use this version or later)",
             publisher: "WHATWG"
           },
@@ -101,8 +101,8 @@
             authors: [
               "Anne van Kesteren"
             ],
-            href: "https://notifications.spec.whatwg.org/review-drafts/2023-07/",
-            date: "17 July 2023",
+            href: "https://notifications.spec.whatwg.org/review-drafts/2025-01/",
+            date: "20 January 2025",
             status: "Review Draft (use this version or later)",
             publisher: "WHATWG"
           },
@@ -126,27 +126,16 @@
             status: "Review Draft (use this version or later)",
             publisher: "WHATWG"
           },
-          "CTA-5000-G": {
-            title: "Web Media API Snapshot 2024 CTA-5000-G",
+          "RESOURCE-TIMING": {
+            title: "Resource Timing",
             authors: [
-              "Jon Piesing",
-              "John Riviello"
+              "Yoav Weiss",
+              "Noam Rosenthal"
             ],
-            href: "https://www.cta.tech/resources-folder/standards/cta-5000-g/",
-            date: "October 2024",
-            publisher: "Consumer Technology Association",
-            status: "CTA Specification"
-          },
-          "CTA-5000-G-ERRATA": {
-            title: "Web Media API Snapshot 2024 CTA-5000-G and Errata",
-            authors: [
-              "Jon Piesing",
-              "John Riviello"
-            ],
-            href: "https://www.cta.tech/resources-folder/standards/cta-5000-g-errata/",
-            date: "April 2025",
-            publisher: "Consumer Technology Association",
-            status: "CTA Specification"
+            href: "https://www.w3.org/TR/2022/WD-resource-timing-2-20220719/",
+            date: "19 July 2022",
+            status: "Working Draft (use this version or later)",
+            publisher: "W3C"
           },
           "CTA-5000-H": {
             title: "Web Media API Snapshot 2025 CTA-5000-H",
@@ -246,12 +235,13 @@
         <p>Devices MUST be conforming implementations of the following specifications:</p>
         <ul>
           <li>DOM [[!DOM]]</li>
-          <li>ECMAScript 2024 Language Specification [[!ECMASCRIPT-2024]]
+          <li>ECMAScript 2025 Language Specification [[!ECMASCRIPT-2025]]
             <ul>
               <li>Exceptions:
                 <ul>
-                  <li><a href="https://262.ecma-international.org/15.0/#sec-arraybuffer.prototype.resize">Resizable ArrayBuffers</a> and <a href="https://262.ecma-international.org/15.0/#sec-sharedarraybuffer.prototype.grow">growable SharedArrayBuffers</a> are not yet widely supported.</li>
-                  <li>The <a href="https://262.ecma-international.org/15.0/#sec-atomics.waitasync"><code>Atomics.waitAsync</code></a> method is not yet widely supported.</li>
+                  <li>The <a href="https://262.ecma-international.org/16.0/#sec-atomics.waitasync"><code>Atomics.waitAsync</code></a> method is not yet widely supported.</li>
+                  <li><a href="https://262.ecma-international.org/16.0/#prod-RegularExpressionModifier">Regular Expression Inline Pattern Modifiers</a> are not yet widely supported.</li>
+                  <li>16-bit floating point number support required for <a href="https://262.ecma-international.org/16.0/#sec-float16array"><code>Float16Array</code></a> is not universal, both in the JavaScript API and the underlying CPU architecture. Using it may result in slower performance on some platforms.</li>
                </ul>
             </ul>
           </li>
@@ -267,8 +257,7 @@
                 <ul>
                   <li><a href="https://html.spec.whatwg.org/review-drafts/2024-01/#css-module-script">CSS module scripts</a> are not yet widely supported.</li>
                   <li>The <a href="https://html.spec.whatwg.org/review-drafts/2024-01/#attr-hidden-until-found-state"><code>hidden=until-found</code></a> HTML attribute and the <a href="https://html.spec.whatwg.org/review-drafts/2024-01/#event-beforematch"><code>beforematch</code></a> event are not yet widely supported.</li>
-                  <li>The <a href="https://html.spec.whatwg.org/review-drafts/2024-01/#fetch-priority-attributes"><code>fetchpriority=""</code> attribute</a> is not yet widely supported.</li>
-                  <li>The <a href="https://html.spec.whatwg.org/review-drafts/2024-01/#contenteditable"><code>contenteditable="plaintext-only"</code> attribute</a> is not yet widely supported.</li>
+                  <li>The <a href="https://html.spec.whatwg.org/review-drafts/2024-01/#navigation-api">Navigation API</a> is not yet widely supported.</li>
                   <li>The <a href="https://html.spec.whatwg.org/review-drafts/2024-01/#close-requests-and-close-watchers">CloseWatcher API</a> is not yet widely supported.</li>
                   <li>The <a href="https://html.spec.whatwg.org/review-drafts/2024-01/#common-input-element-apis:htmlselectelement"><code>showPicker()</code> support for <code>&lt;select&gt;</code> elements</a> is not yet widely supported.</li>
                 </ul>
@@ -279,7 +268,7 @@
       </section>
       <section>
         <h3>CSS specifications</h3>
-        <p>Devices MUST be conforming implementations of the following specifications, which are derived from the official Cascading Style Sheets definition from CSS Snapshot 2023 [[?CSS-2023]] as well as more recent revisions to CSS specifications as appropriate:</p>
+        <p>Devices MUST be conforming implementations of the following specifications, which are derived from the official Cascading Style Sheets definition from CSS Snapshot 2024 [[?CSS-2024]] as well as more recent revisions to CSS specifications as appropriate:</p>
         <ul>
           <li>Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification [[!CSS2]]</li>
           <li>Compositing and Blending Level 1 [[!COMPOSITING]]</li>
@@ -297,7 +286,7 @@
           <li>CSS Flexible Box Layout Module Level 1 [[!CSS-FLEXBOX-1]]</li>
           <li>CSS Font Loading Module Level 3 [[!CSS-FONT-LOADING-3]]</li>
           <li>CSS Fonts Module Level 3 [[!CSS-FONTS-3]]</li>
-          <li>CSS Grid Layout Module Level 1 [[!CSS-GRID-1]]</li>
+          <li>CSS Grid Layout Module Level 2 [[!CSS-GRID-2]]</li>
           <li>CSS Images Module Level 3 [[!CSS-IMAGES-3]]</li>
           <li>CSS Logical Properties and Values Level 1 [[!CSS-LOGICAL-1]]</li>
           <li>CSS Multi-column Layout Module Level 1 [[!CSS-MULTICOL-1]]</li>
@@ -376,9 +365,11 @@
             <ul>
               <li>Exceptions:
                 <ul>
-                  <li>The <a href="https://fetch.spec.whatwg.org/review-drafts/2023-12/#sec-purpose-header"><code>Sec-Purpose: prefetch</code> header</a> is not yet widely supported.</li>
-                  <li>The <a href="https://fetch.spec.whatwg.org/review-drafts/2023-12/#concept-request-destination"><code>"json"</code> destination for JSON modules</a> is not yet widely supported.</li>
-               </ul>
+                  <li>The <a href="https://fetch.spec.whatwg.org/review-drafts/2024-12/#sec-purpose-header"><code>Sec-Purpose: prefetch</code> header</a> is not yet widely supported.</li>
+                  <li>The <a href="https://fetch.spec.whatwg.org/review-drafts/2024-12/#concept-request-destination"><code>"json"</code> destination for JSON modules</a> is not yet widely supported.</li>
+                  <li><a href="https://fetch.spec.whatwg.org/review-drafts/2024-12/#body-mixin">Setting the proper realm of the result of <code>Response arrayBuffer()</code></a> is not yet widely supported.</li>
+                  <li><a href="https://fetch.spec.whatwg.org/review-drafts/2024-12/#scheme-fetch">Partitioning <code>Blob URL</code> fetches by storage key</a> is not yet widely supported.</li>
+                </ul>
             </ul>
           </li>
           <li>WebSockets [[!WEBSOCKETS]]</li>
@@ -408,7 +399,7 @@
           <li>High Resolution Time [[!HR-TIME-3]]</li>
           <li>Navigation Timing [[!NAVIGATION-TIMING]]</li>
           <li>Performance Timeline [[!PERFORMANCE-TIMELINE]]</li>
-          <li>Resource Timing Level 1 [[!RESOURCE-TIMING-1]]</li>
+          <li>Resource Timing [[!RESOURCE-TIMING]]</li>
           <li>User Timing Level 2 [[!USER-TIMING-2]]</li>
         </ul>
       </section>
