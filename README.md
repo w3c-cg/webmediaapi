@@ -21,14 +21,14 @@ This repository contains the Web Media API Snapshot specification that is being 
 - [Web Media API Snapshot 2024 (April 2025 update with Errata)](https://www.w3.org/community/reports/webmediaapi/CG-FINAL-webmediaapi-20250411/) was published 11 April 2025.
 - [Web Media API Snapshot 2025](https://www.w3.org/community/reports/webmediaapi/CG-FINAL-webmediaapi-20251022/) was published 22 October 2025.
 - Web Media API Snapshot 2026 is planned to be published Q4 2026.
-- [Web Media API Snapshot](https://w3c.github.io/webmediaapi/) is the latest version on the repository.
+- [Web Media API Snapshot](https://w3c-cg.github.io/webmediaapi/) is the latest version on the repository.
 
-A quick-glance, non-normative overview of APIs included in the Web Media API Snapshot by year is available at [Web Media API Snapshot - Support by Year](https://w3c.github.io/webmediaapi/wmas-support-table.html)
+A quick-glance, non-normative overview of APIs included in the Web Media API Snapshot by year is available at [Web Media API Snapshot - Support by Year](https://w3c-cg.github.io/webmediaapi/wmas-support-table.html)
 
 The source code & documentation for the test suites are available at the [cta-wave/WMAS](https://github.com/cta-wave/WMAS) repository
 
 The [Web Media API Community Group](https://www.w3.org/community/webmediaapi) previously maintained repositories for two other specifications that have since been deprecated:
-- [Web Media Application Developer Guidelines](https://github.com/w3c/webmediaguidelines/)
-- [Web Media User Agent Integration](https://github.com/w3c/webmediaporting)
+- [Web Media Application Developer Guidelines](https://github.com/webmediaguidelines/)
+- [Web Media User Agent Integration](https://github.com/w3c-cg/webmediaporting)
 
 The [Web Media API Community Group](https://www.w3.org/community/webmediaapi) was proposed by and continues to cooperate with the [CTA WAVE Project](https://cta.tech/Research-Standards/Standards-Listing/WAVE-Project/WAVE-Project.aspx)
